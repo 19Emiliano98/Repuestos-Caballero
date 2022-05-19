@@ -8,7 +8,6 @@ const cards = document.getElementById('cards');
 const items = document.getElementById('items');
 const itemCarrito = document.getElementById('item-carrito');
 const footer = document.getElementById('footer');
-let stockBase = 10;
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,9 +38,9 @@ const pintarCards = data => {
     cardProductos.appendChild(fragment);
 }
        
-items.addEventListener('click', e => addCarrito(e))
+items.addEventListener('click', e => addCarrito(e));
 
-itemCarrito.addEventListener('click', e => btnAccion(e))
+itemCarrito.addEventListener('click', e => btnAccion(e));
 
 const addCarrito = (e) => {
     e.target.classList.contains('btn-comprar') && setCarrito(e.target.parentElement) // operador AND
@@ -121,4 +120,23 @@ const btnAccion = e => {
     }
     
     e.stopPropagation();
+}
+
+// ----- Sticky top ----- //
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickyNav()};
+
+// Get the navbar
+const navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+const sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
