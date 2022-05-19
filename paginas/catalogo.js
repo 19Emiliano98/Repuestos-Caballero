@@ -6,6 +6,7 @@ const templateCarrito = document.getElementById('template-carrito').content;
 const fragment = document.createDocumentFragment();
 const cards = document.getElementById('cards');
 const items = document.getElementById('items');
+const itemCarrito = document.getElementById('item-carrito');
 const footer = document.getElementById('footer');
 let stockBase = 10;
 
@@ -38,13 +39,9 @@ const pintarCards = data => {
     cardProductos.appendChild(fragment);
 }
        
-items.addEventListener('click', e => {
-    addCarrito(e);
-})
+items.addEventListener('click', e => addCarrito(e))
 
-items.addEventListener('click', e => {
-    btnAccion(e);
-})
+itemCarrito.addEventListener('click', e => btnAccion(e))
 
 const addCarrito = (e) => {
     e.target.classList.contains('btn-comprar') && setCarrito(e.target.parentElement) // operador AND
@@ -66,7 +63,7 @@ const setCarrito = objeto => {
 }
 
 const pintarCarrito = () => {
-    item.innerHTML = '';
+    itemCarrito.innerHTML = '';
     Object.values(carrito).forEach(producto => {
         templateCarrito.querySelector('th').textContent = producto.id;
         templateCarrito.querySelectorAll('td')[0].textContent = producto.nombre;
@@ -78,7 +75,7 @@ const pintarCarrito = () => {
         const clone = templateCarrito.cloneNode(true);
         fragment.appendChild(clone);
     })
-    item.appendChild(fragment);
+    itemCarrito.appendChild(fragment);
     pintarFooter();
 }
 
