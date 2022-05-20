@@ -3,6 +3,12 @@
     padding: 0;
 }
 /* NavBar */
+#logo{
+	width: 40px;
+	height: 40px;
+	margin-top: 0.40rem;
+	margin-left: -78rem;
+}
 #navbar {
 	overflow: hidden;
 	display: flex;
@@ -153,4 +159,21 @@
 }
 #btn-finalizar{
 	padding: 2rem;
+}
+
+/* TEST */
+.margin-card{
+	margin-top: -1rem;
+}
+.card-title{
+	margin-top: -2.55rem;
+	margin-left: 4.5rem;
+}
+.card-precio{
+	margin-top: -2.5rem;
+	margin-left: 3.5rem;
+}
+.card-marca{
+	margin-top: -2.5rem;
+	margin-left: 3.3rem;
 }
