@@ -21,78 +21,101 @@
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <header>
-    <!-- NavBar -->
-	<nav>
-        <div id="navbar">
-            <div>
-                <a href="./index.html">Home</a>
-                <a href="./paginas/catalogo.html">Catálogo</a>
-                <a href="...">Empresa</a>
-                <a href="...">Contacto</a>
-                <a href="...">FB</a>
-            </div>
-        </div>
-    </nav>
-    <!-- <nav>
-        <ul class="flexNav">
-			<img src="./imagenes/logo.jpeg" id="logo">
-				<li id="home"><a href="./index.html">Home</a></li>
-				<li><a href="./paginas/catalogo.html">Catálogo</a></li>
-				<li><a href="">Empresa</a></li>
-				<li><a href="">Empresa</a></li>
-				<li><a href="">Contacto</a></li>
-				<li><a href="">"Icono FB"</a></li>
-			</ul>
-    </nav> -->
+<!-- NavBar -->
+<nav>
+    <div id="navbar">
+        <div>
+			<img src="../imagenes/logo.jpeg" id="logo">
+            <a href="./index.html">Home</a>
+            <a href="...">Empresa</a>
+			<a href="...">Ubicación</a>
+            <a href="./paginas/catalogo.html">Catálogo</a>
+            <a href="...">Contacto</a>
+            <a href="...">FB</a>
+			<a href="...">E-mail</a>
+		</div>
+    </div>
+</nav>
 </header>
 <body>
-  <!-- decoracion principal -->
-  <div class="flexDeco">
+
+<!-- decoracion principal -->
+<div class="flexDeco">
     <h4 id="textDeco">TODOS LOS REPUESTOS <br>PARA TU AUTO</h4>
-      <img src="./imagenes/autoIndex.png" alt="auto">
-  </div>
-
-  <div class="contenedor">
-		<div class="carousel">
-			<div class="carousel__contenedor">
-				<button aria-label="Anterior" class="carousel__anterior">
-					<i class="fas fa-chevron-left"></i>
-				</button>
-
-				<div class="carousel__lista">
-					<div class="carousel__elemento">
-						<img src="./imagenes/fiat.png" alt="Rock and Roll Hall of Fame">
-					</div>
-					<div class="carousel__elemento">
-						<img src="./imagenes/peugeot.png" alt="Constitution Square - Tower I">
-					</div>
-					<div class="carousel__elemento">
-						<img src="./imagenes/chevrolet.png" alt="Empire State Building">
-					</div>
-					<div class="carousel__elemento">
-						<img src="./imagenes/citroen.png" alt="Harmony Tower">
-					</div>
-	        <div class="carousel__elemento">
-						<img src="./imagenes/ww.png" alt="Empire State Building">
-					</div>
-					<div class="carousel__elemento">
-						<img src="./imagenes/ford.png" alt="Harmony Tower">
-					</div>
-					<div class="carousel__elemento">
-						<img src="./imagenes/renault.png" alt="Empire State Building">
-					</div>
+    <img src="./imagenes/autoIndex.png" alt="auto">
+</div>
+<div class="contenedor">
+	<h3>NUESTRAS MARCAS TRABAJADAS</h3>
+	<div class="carousel">
+		<div class="carousel__contenedor">
+			<button aria-label="Anterior" class="carousel__anterior">
+				<i class="fas fa-chevron-left"></i>
+			</button>
+			<div class="carousel__lista">
+				<div class="carousel__elemento">
+					<img src="./imagenes/fiat.png" alt="Rock and Roll Hall of Fame">
 				</div>
-
-				<button aria-label="Siguiente" class="carousel__siguiente">
-					<i class="fas fa-chevron-right"></i>
-				</button>
+				<div class="carousel__elemento">
+					<img src="./imagenes/peugeot.png" alt="Constitution Square - Tower I">
+				</div>
+				<div class="carousel__elemento">
+					<img src="./imagenes/chevrolet.png" alt="Empire State Building">
+				</div>
+				<div class="carousel__elemento">
+					<img src="./imagenes/citroen.png" alt="Harmony Tower">
+				</div>
+				<div class="carousel__elemento">
+					<img src="./imagenes/ww.png" alt="Empire State Building">
+				</div>
+				<div class="carousel__elemento">
+					<img src="./imagenes/ford.png" alt="Harmony Tower">
+				</div>
+				<div class="carousel__elemento">
+					<img src="./imagenes/renault.png" alt="Empire State Building">
+				</div>
 			</div>
+			<button aria-label="Siguiente" class="carousel__siguiente">
+				<i class="fas fa-chevron-right"></i>
+			</button>
 		</div>
 	</div>
+</div>
 
-  	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="./main.js"></script>
+<!-- Sobre Nosotros -->
+<div class="aboutUscontainer">
+	<img src="./imagenes/logoLetras.jpeg" alt="Repuestos caballero">
+	<div>
+		<h4>SOBRE NOSOTROS</h4>
+		<h5>QUIÉNES SOMOS Y QUE HACEMOS</h5>
+		<p>
+			Somos una empresa con vasta trayectoria en el mercado automotor, 
+			mas de 50 años nos respaldan en la ciudad de Rosario.
+			<br>
+			Desde el comienzo de nuestra actividad hasta la actualidad, nos dedicamos 
+			al abastecimiento del parque automotor para todas sus marcas. Contamos con 
+			amplio stock (mas de 50.000 articulos), calidad y variedad, ademas del 
+			conocimiento para asesorar a nuestros clientes y satisfacerlos en todas sus necesidades.
+			Gracias al fuerte crecimiento que tuvimos en los ultimos años, ampliamos nuestros canales 
+			de ventas con el fin de llegar a una mayor cantidad de clientes tanto de Rosario como alrededores.
+			<br>
+			<b>Nuestro principal objetivo es generar confianza en el cliente</b>, garantizando la mejor calidad de 
+			producto y servicio que su auto necesita.
+		</p>
+	</div>
+</div>
+
+<!-- Google Maps Ubicación -->
+<div class="mapsContainer">
+	<iframe 
+		src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3349.859757637181!2d-60.918835!3d-32.901876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b649654ed16759%3A0x5d9b2bd822cb6d70!2sREPUESTOS%20CABALLERO!5e0!3m2!1ses!2sar!4v1653782473288!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+	</iframe>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptas iusto minima sed voluptate nihil unde dolorum corporis sequi omnis porro, atque placeat veniam asperiores expedita blanditiis, fugiat voluptatum natus?
+	Est quos temporibus ullam ex repellendus. Eligendi beatae harum provident magnam assumenda aliquid omnis facere quasi quidem. Consectetur blanditiis quis quod, dolorum, nihil explicabo vero, sint sit commodi corporis dolore.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
 </body>
 <footer>
 

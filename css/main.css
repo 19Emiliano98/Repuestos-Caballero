@@ -17,44 +17,41 @@
     align-items: center;
     list-style: none;
     background-color: rgb(13, 13, 194);
-  }
-
+	z-index: 100; /* z-index sirve para hacer que el elemento este siempre por arriba del resto */
+}
 #navbar div {
 	margin-right: 4rem;
 }  
-  
-  /* Navbar links */
-  #navbar a {
+/* Navbar links */
+#navbar a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 14px;
 	text-decoration: none;
-  }
-  
-  /* Page content */
-  .content {
+} 
+/* Page content */
+.content {
 	padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
 	padding-top: 60px;
-  }
+}
 /* Primera decoración */
 .flexDeco{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(141, 136, 136);
+	padding-top: 2rem;
 }
 #textDeco{
     margin: 1rem 5rem 0rem 0rem;
@@ -66,8 +63,13 @@
 	max-width: 750px;
 	width: 90%;
 	margin: auto;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+	margin-top: 8%;
+	margin-bottom: 4%;
+}
+.contenedor h3{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 7%;
 }
 .carousel__contenedor {
 	position: relative;
@@ -109,6 +111,49 @@
 	text-align: center;
 }
 
+/* --- --- About Us --- --- */
+.aboutUscontainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0% 0% 0% 0%;
+}
+.aboutUscontainer div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 6% 6% 6% 6%;
+}
+.aboutUscontainer p{
+	padding: 4% 5%;
+}
+.aboutUscontainer img{
+	width: 25rem;
+	height: 15rem;
+	margin: 0% 0% 0% 5%;
+}
+h4{
+	font-size: 1.7rem;
+}
+
+
+/* --- --- Ubicación --- --- */
+.mapsContainer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: gray;
+}
+.mapsContainer p{
+	margin: 0% 10% 0% 5%;
+}
+.mapsContainer iframe{
+	margin: 0% 0% 0% 10%;
+	width: 400px;
+	height: 400px;
+	padding: 3% 0% 3% 0%;
+}
 /* @media screen and (max-width: 800px) {
 	body {
 		padding: 40px 0;
