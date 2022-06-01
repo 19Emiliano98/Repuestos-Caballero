@@ -118,7 +118,6 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 0% 0% 0% 0%;
 }
 .aboutUscontainer div{
 	display: flex;
@@ -146,8 +145,10 @@ h4{
 /* --- --- WSP Contact --- --- */
 
 #wspLogo{
-	width: 8%;
-	margin-bottom: 2rem;
+	margin-top: 5rem;
+	margin-bottom: 4rem;
+	width: 115px;
+	height: 115px;
 }
 .wspContact{
 	display: flex;
