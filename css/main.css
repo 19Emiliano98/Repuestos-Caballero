@@ -16,7 +16,7 @@
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    background-color: rgb(13, 13, 194);
+    background-color: #00008B;
 	z-index: 100; /* z-index sirve para hacer que el elemento este siempre por arriba del resto */
 }
 #navbar div {
@@ -126,12 +126,17 @@
 	padding: 6% 6% 6% 6%;
 }
 .aboutUscontainer p{
-	padding: 4% 5%;
+	margin: 0% 5%;
+	font-size: 1.08rem;
+	font-family: 'Hind Siliguri', sans-serif;
 }
 .aboutUscontainer img{
 	width: 25rem;
 	height: 15rem;
 	margin: 0% 0% 0% 5%;
+}
+.aboutUscontainer h5{
+	margin-bottom: 4%;
 }
 h4{
 	font-size: 1.7rem;
@@ -167,16 +172,32 @@ h4{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	background-color: gray;
+	background-color: #00008B;
+	padding: 1% 0%;
 }
-.mapsContainer p{
-	margin: 0% 10% 0% 5%;
+.flexMaps{
+	display: flex;
+	flex-direction: column;
+}
+.icon{
+	color: white;
+	margin-top: 0%;
+	font-size: 1.9rem;
+}
+.mapsContainer h6{
+	margin: -18% 0% 0% 13%;
+	color: white;
+	font-size: 1.5rem;
 }
 .mapsContainer iframe{
 	margin: 0% 0% 0% 10%;
-	width: 400px;
-	height: 400px;
+	width: 340px;
+	height: 340px;
 	padding: 3% 0% 3% 0%;
+	margin-left: 4%;
+}
+.mapsContainer img{
+	width: 40px;
 }
 
 /* --- --- Footer --- --- */
