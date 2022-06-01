@@ -8,6 +8,7 @@
 	height: 40px;
 	margin-top: 0.40rem;
 	margin-left: -78rem;
+	border-radius: 50%;
 }
 #navbar {
 	overflow: hidden;
@@ -178,11 +179,7 @@ h4{
 .flexMaps{
 	display: flex;
 	flex-direction: column;
-}
-.icon{
-	color: white;
-	margin-top: 0%;
-	font-size: 1.9rem;
+	margin: -6% 0% 0% 8%;
 }
 .mapsContainer h6{
 	margin: -18% 0% 0% 13%;
@@ -195,9 +192,6 @@ h4{
 	height: 340px;
 	padding: 3% 0% 3% 0%;
 	margin-left: 4%;
-}
-.mapsContainer img{
-	width: 40px;
 }
 
 /* --- --- Footer --- --- */
