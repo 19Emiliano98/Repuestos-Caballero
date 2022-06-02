@@ -145,7 +145,7 @@ h4{
 /* --- --- WSP Contact --- --- */
 
 #wspLogo{
-	margin-top: 5rem;
+	margin-top: 2rem;
 	margin-bottom: 4rem;
 	width: 115px;
 	height: 115px;
@@ -155,7 +155,7 @@ h4{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 6rem;
+	margin-bottom: 12%;
 }
 .wspContact h6{
 	font-size: 1.1rem;
