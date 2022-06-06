@@ -28,17 +28,15 @@
 </head>
 <header>
 <!-- NavBar -->
-<nav>
-    <div id="navbar">
-        <div>
-			<img src="./imagenes/logo.jpeg" id="logo">
-            <a href="./index.html">HOME</a>
-            <a href="...">EMPRESA</a>
-			<a href="...">UBICACIÓN</a>
-            <a href="./paginas/catalogo.html">CATÁLOGO</a>
-            <a href="...">CONTACTO</a>
-		</div>
-    </div>
+<nav id="navbar">
+	<a href="./index.html"><img src="./imagenes/logo.jpeg" id="logo"></a>
+    <div>
+		<a href="./index.html">HOME</a>
+		<a href="#empresa">EMPRESA</a>
+		<a href="#ubicacion">UBICACIÓN</a>
+		<a href="./paginas/catalogo.html">CATÁLOGO</a>
+		<a href="...">CONTACTO</a>
+	</div>
 </nav>
 </header>
 <body>
@@ -84,7 +82,7 @@
 	</div>
 </div>
 <!-- Sobre Nosotros -->
-<div class="aboutUscontainer">
+<div class="aboutUscontainer" id="empresa">
 	<img src="./imagenes/logoLetras.png" alt="Repuestos caballero">
 	<div>
 		<h4>SOBRE NOSOTROS</h4>
@@ -120,14 +118,35 @@
 </body>
 <footer>
 <!-- Google Maps Ubicación -->
-<div class="mapsContainer">
+<div class="mapsContainer" id="ubicacion">
 	<iframe 
 		src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3349.859757637181!2d-60.918835!3d-32.901876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b649654ed16759%3A0x5d9b2bd822cb6d70!2sREPUESTOS%20CABALLERO!5e0!3m2!1ses!2sar!4v1653782473288!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 	</iframe>
-	<div class="flexMaps">
-		<h6>
-			
-		</h6>
+	<ul>
+		<li>
+			<p>Contáctanos:</p>
+		</li>
+		<li>
+			<a href="https://es-la.facebook.com/">
+				<i class="fa-brands fa-facebook"></i>
+				<b>facebook</b>
+			</a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/">
+				<i class="fa-brands fa-instagram"></i>
+				<b>Instagram</b>
+			</a>
+		</li>
+		<li>
+			<i class="fa-solid fa-envelope"></i>
+			<b>E-mail</b>
+		</li>
+	</ul>
+	<div class="lastMsj">
+		<img src="./imagenes/logo.jpeg" alt="Repuestos logo">
+		<p>Lunes a viernes de 9 a 16 hs</p>
+		<p>Sabados de 9 a 14 hs</p>
 	</div>
 </div>
 </footer>

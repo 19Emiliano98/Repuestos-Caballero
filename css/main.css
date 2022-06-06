@@ -7,7 +7,7 @@
 	width: 40px;
 	height: 40px;
 	margin-top: 0.40rem;
-	margin-left: -78rem;
+	margin-left: -95rem;
 	border-radius: 50%;
 }
 #navbar {
@@ -18,18 +18,20 @@
     align-items: center;
     list-style: none;
     background-color: #00008B;
+	padding-bottom: 3px;
 	z-index: 100; /* z-index sirve para hacer que el elemento este siempre por arriba del resto */
 }
-#navbar div {
-	margin-right: 4rem;
-}  
+#navbar div{
+	margin-right: 4%;
+}
 /* Navbar links */
 #navbar a {
 	float: left;
 	display: block;
 	color: #f2f2f2;
 	text-align: center;
-	padding: 14px;
+	margin: 0px 0px 0px 0px;
+	padding: 5px 10px;
 	text-decoration: none;
 } 
 /* Page content */
@@ -177,26 +179,59 @@ h4{
 	background-color: #00008B;
 	padding: 1% 0%;
 }
-.flexMaps{
-	display: flex;
-	flex-direction: column;
-	margin: -6% 0% 0% 8%;
-}
-.mapsContainer h6{
-	margin: -18% 0% 0% 13%;
-	color: white;
-	font-size: 1.5rem;
-}
 .mapsContainer iframe{
 	margin: 0% 0% 0% 10%;
-	width: 340px;
-	height: 340px;
-	/* padding: 3% 0% 3% 0%; */
-	margin-left: 4%;
+	width: 300px;
+	height: 220px;
+	margin-left: 7%;
 	border-radius: 35px 35px 35px 35px;
 	-webkit-border-radius: 35px 35px 35px 35px;
 	-moz-border-radius: 35px 35px 35px 35px;
 	border: 3px solid #000000;
+}
+.mapsContainer ul{
+	list-style: none;
+	color: white;
+	border-left: 2px solid #e4d2cb;
+	border-right: 2px solid #e4d2cb;
+	margin-left: 7%;
+	padding: 2% 8%;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-size: 1.2rem;
+}
+.mapsContainer li{
+	margin-bottom: 2%;
+}
+.mapsContainer p{
+	font-family: 'Hind Siliguri', sans-serif;
+	font-size: 1.3rem;
+	text-decoration: underline;
+}
+.mapsContainer a{
+	color: white;
+	text-decoration: none;
+}
+.mapsContainer img{
+	width: 75px;
+	height: 75px;
+	border-radius: 119px 119px 119px 119px;
+	-webkit-border-radius: 119px 119px 119px 119px;
+	-moz-border-radius: 119px 119px 119px 119px;
+	margin-bottom: 10%;
+}
+.lastMsj{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Hind Siliguri', sans-serif;
+	margin: 0% 0% 0% 11%;
+}
+.lastMsj p{
+	color: white;
+	text-decoration: none;
+	margin-bottom: 0%;
+	font-size: 1rem;
+	opacity: 70%;
 }
 
 /* --- --- Footer --- --- */
